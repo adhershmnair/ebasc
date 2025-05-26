@@ -86,7 +86,7 @@ export default function Services() {
                 </ul>
               </div>
               <div className="d-flex gap-3">
-                <button className="btn btn-danger">Register as Donor</button>
+                <a href="https://forms.gle/RTGz19wiyR4SFJpf6" className="btn btn-danger" target="_blank">Register as Donor</a>
                 <button className="btn btn-outline-danger">Request Blood</button>
               </div>
             </div>

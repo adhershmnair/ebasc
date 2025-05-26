@@ -91,7 +91,7 @@ export default function Home() {
               <p className="lead mb-4">
                 Edanadu Brothers Arts and Sports Club - Nurturing Talent, Building Community
               </p>
-              <a className="btn btn-light btn-lg">
+              <a href='https://forms.gle/LzpMEVXRvWx5WKf39' className="btn btn-light btn-lg" target='_blank'>
                 Join Us Today
               </a>
             </div>
@@ -144,8 +144,8 @@ export default function Home() {
             <div className="col-md-4">
               <div className="card h-100">
                 <div className="card-body">
-                  <h3 className="card-title h4 mb-3">Annual Sports Meet</h3>
-                  <p className="card-text text-muted mb-3">Join us for our annual sports competition featuring various athletic events.</p>
+                  <h3 className="card-title h4 mb-3">Annual Cultural Fest</h3>
+                  <p className="card-text text-muted mb-3">Join us for our annual cultural fest.</p>
                   <a href="#" className="btn btn-outline-primary">Coming Soon</a>
                 </div>
               </div>
@@ -153,8 +153,8 @@ export default function Home() {
             <div className="col-md-4">
               <div className="card h-100">
                 <div className="card-body">
-                  <h3 className="card-title h4 mb-3">Art Exhibition</h3>
-                  <p className="card-text text-muted mb-3">Showcasing local talent and artistic expressions from our community.</p>
+                  <h3 className="card-title h4 mb-3">Youth Camps</h3>
+                  <p className="card-text text-muted mb-3">Hosting different type of camps.</p>
                   <a href="#" className="btn btn-outline-primary">Register Now</a>
                 </div>
               </div>

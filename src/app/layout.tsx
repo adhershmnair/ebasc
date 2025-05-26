@@ -20,17 +20,17 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {
-  return (
+}) {  return (
     <html lang="en">
       <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet" />
-      </head>      <body className={lato.className}>
-        <Navbar />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet"/>
+      </head>
+      <body className={lato.className}>
+        <Navbar/>
         <main>{children}</main>
-        <Footer />
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive" />
-        <Script src="/scripts/carousel.js" strategy="afterInteractive" />
+        <Footer/>
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" strategy="afterInteractive"/>
+        <Script src="/scripts/carousel.js" strategy="afterInteractive"/>
       </body>
     </html>
   )
