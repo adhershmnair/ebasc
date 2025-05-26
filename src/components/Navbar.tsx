@@ -12,10 +12,18 @@ const Navbar = () => {
   useEffect(() => {
     initNavbarHandlers();
   }, []);
-
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    document.body.classList.toggle('menu-open');
+    if (window.innerWidth <= 991) { // Only toggle on mobile devices
+      setIsMenuOpen(!isMenuOpen);
+      document.body.classList.toggle('menu-open');
+    }
+  };
+
+  const handleLinkClick = () => {
+    if (window.innerWidth <= 991) { // Only close menu on mobile devices
+      setIsMenuOpen(false);
+      document.body.classList.remove('menu-open');
+    }
   };
 
   return (
@@ -47,11 +55,10 @@ const Navbar = () => {
             id="navbarNav"
           >
             <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link
+              <li className="nav-item">                <Link
                   href="/"
                   className={`nav-link ${pathname === "/" ? "active" : ""}`}
-                  onClick={() => toggleMenu()}
+                  onClick={handleLinkClick}
                 >
                   Home
                 </Link>
@@ -60,7 +67,7 @@ const Navbar = () => {
                 <Link
                   href="/about"
                   className={`nav-link ${pathname === "/about" ? "active" : ""}`}
-                  onClick={() => toggleMenu()}
+                  onClick={handleLinkClick}
                 >
                   About Us
                 </Link>
@@ -69,7 +76,7 @@ const Navbar = () => {
                 <Link
                   href="/services"
                   className={`nav-link ${pathname === "/services" ? "active" : ""}`}
-                  onClick={() => toggleMenu()}
+                  onClick={handleLinkClick}
                 >
                   Services
                 </Link>
@@ -78,7 +85,7 @@ const Navbar = () => {
                 <Link
                   href="/contact"
                   className={`nav-link ${pathname === "/contact" ? "active" : ""}`}
-                  onClick={() => toggleMenu()}
+                  onClick={handleLinkClick}
                 >
                   Contact Us
                 </Link>
