@@ -1,0 +1,148 @@
+/* Bootstrap import */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom variables */
+:root {
+  --bs-primary: #1a365d;
+  --bs-secondary: #2563eb;
+}
+
+/* Global styles */
+body {
+  color: #333;
+  background: #fff;
+}
+
+/* Typography */
+@media (max-width: 768px) {
+  .text-justify {
+    text-align: justify;
+  }
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Navbar styles */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Card animations */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Carousel customization */
+.carousel-caption-wrapper {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Container paddings */
+.section-padding {
+  padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
+
+/* Custom utility classes */
+.shadow-hover:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Team Slider customization */
+.team-swiper {
+  padding-bottom: 4rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.team-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.team-swiper .swiper-pagination-bullet {
+  background: var(--bs-primary);
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.team-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 20px;
+  border-radius: 5px;
+}
+
+.team-swiper .swiper-button-prev,
+.team-swiper .swiper-button-next {
+  color: var(--bs-primary);
+  transition: all 0.3s ease;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-swiper .swiper-button-prev:after,
+.team-swiper .swiper-button-next:after {
+  font-size: 1.2rem;
+}
+
+.team-swiper .swiper-button-prev:hover,
+.team-swiper .swiper-button-next:hover {
+  transform: scale(1.1);
+  background: var(--bs-primary);
+  color: white;
+}
+
+.team-card {
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.team-avatar {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .team-swiper .swiper-button-prev,
+  .team-swiper .swiper-button-next {
+    display: none;
+  }
+
+  .team-swiper {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .team-card {
+    margin: 0.5rem;
+  }
+}

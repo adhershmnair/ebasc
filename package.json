@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.10",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "@types/swiper": "^5.4.3",
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "next": "^15.3.2",
+    "npx": "^10.2.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "swiper": "^11.2.8",
+    "typescript": "^5.8.3"
+  }
+}

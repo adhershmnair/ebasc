@@ -1,0 +1,99 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Rajesh Kumar",
+      "position": "President",
+      "phone": "+91 9876543210",
+      "description": "Leading EBASC since 2020 with a vision to empower youth through sports and arts."
+    },
+    {
+      "id": 2,
+      "name": "Arun Nair",
+      "position": "Secretary",
+      "phone": "+91 9876543211",
+      "description": "Coordinating club activities and maintaining strong community relationships."
+    },
+    {
+      "id": 3,
+      "name": "Priya Menon",
+      "position": "Arts Director",
+      "phone": "+91 9876543212",
+      "description": "Professional dancer leading our cultural programs and events."
+    },
+    {
+      "id": 4,
+      "name": "Thomas John",
+      "position": "Sports Director",
+      "description": "Former state-level athlete nurturing young sports talents."
+    },
+    {
+      "id": 5,
+      "name": "Maya Krishnan",
+      "position": "Treasurer",
+      "phone": "+91 9876543213"
+    },
+    {
+      "id": 6,
+      "name": "Abdul Rasheed",
+      "position": "Event Coordinator",
+      "description": "Organizing major club events and community gatherings."
+    },
+    {
+      "id": 7,
+      "name": "Sreelakshmi P",
+      "position": "Dance Instructor",
+      "phone": "+91 9876543214",
+      "description": "Classical dance expert with 15 years of teaching experience."
+    },
+    {
+      "id": 8,
+      "name": "George Mathew",
+      "position": "Football Coach",
+      "phone": "+91 9876543215",
+      "description": "Former professional player developing young football talents."
+    },
+    {
+      "id": 9,
+      "name": "Fathima Rahman",
+      "position": "Music Director",
+      "description": "Leading our music programs and cultural performances."
+    },
+    {
+      "id": 10,
+      "name": "Vishnu Prasad",
+      "position": "Cricket Coach",
+      "phone": "+91 9876543216"
+    },
+    {
+      "id": 11,
+      "name": "Anjali Menon",
+      "position": "Youth Coordinator",
+      "description": "Engaging young members in community activities."
+    },
+    {
+      "id": 12,
+      "name": "Santhosh Kumar",
+      "position": "Facilities Manager",
+      "phone": "+91 9876543217"
+    },
+    {
+      "id": 13,
+      "name": "Meera Raj",
+      "position": "Art Instructor",
+      "description": "Teaching various forms of visual arts to members."
+    },
+    {
+      "id": 14,
+      "name": "Jayakrishnan",
+      "position": "Volleyball Coach",
+      "phone": "+91 9876543218"
+    },
+    {
+      "id": 15,
+      "name": "Lakshmi Nair",
+      "position": "Cultural Secretary",
+      "description": "Coordinating cultural events and performances."
+    }
+  ]
+}
