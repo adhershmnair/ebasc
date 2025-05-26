@@ -1,11 +1,15 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Lato } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Script from 'next/script'
 
-const inter = Inter({ subsets: ['latin'] })
+const lato = Lato({ 
+  weight: ['400', '700', '900'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'EBASC - Edanadu Brothers Arts and Sports Club',
@@ -21,8 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet" />
-      </head>
-      <body className={inter.className}>
+      </head>      <body className={lato.className}>
         <Navbar />
         <main>{children}</main>
         <Footer />

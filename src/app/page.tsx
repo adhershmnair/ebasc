@@ -74,15 +74,26 @@ export default function Home() {
         <div className="container">
           <div className="row py-5">
             <div className="col-md-8 mx-auto text-center">
+                <div className="mb-4" style={{ maxWidth: '150px', margin: '0 auto' }}>
+                <div className="logo-wrapper">
+                  <Image 
+                    src="/images/brothersedanadu.jpg" 
+                    alt="EBASC Logo" 
+                    width={150} 
+                    height={150} 
+                    className="img-fluid logo-blend"
+                  />
+                </div>
+              </div>
               <h1 className="display-4 fw-bold mb-4">
                 Welcome to EBASC
               </h1>
               <p className="lead mb-4">
                 Edanadu Brothers Arts and Sports Club - Nurturing Talent, Building Community
               </p>
-              <button className="btn btn-light btn-lg">
+              <a className="btn btn-light btn-lg">
                 Join Us Today
-              </button>
+              </a>
             </div>
           </div>
         </div>

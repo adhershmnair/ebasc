@@ -5,27 +5,81 @@
 :root {
   --bs-primary: #1a365d;
   --bs-secondary: #2563eb;
+  --bs-font-sans-serif: Lato, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --scrollbar-width: 8px;
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bs-secondary);
 }
 
 /* Global styles */
 body {
   color: #333;
   background: #fff;
+  font-family: var(--bs-font-sans-serif);
+  padding-right: var(--scrollbar-width);
 }
 
-/* Typography */
-@media (max-width: 768px) {
-  .text-justify {
-    text-align: justify;
-  }
-  p {
-    font-size: 0.95rem;
-  }
+
+/* Typography customization */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.display-4, .display-5 {
+  font-weight: 900;
+}
+
+.fw-black {
+  font-weight: 900 !important;
 }
 
 /* Navbar styles */
 .navbar-brand {
   font-weight: bold;
+}
+
+/* Logo styles */
+.logo-wrapper {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bs-primary);
+}
+
+.navbar .logo-wrapper {
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .logo-wrapper {
+  transform: scale(1.1);
+}
+
+.logo-blend {
+  mix-blend-mode: screen;
+  filter: contrast(1) brightness(1.2);
+  transition: all 0.3s ease;
+}
+
+.navbar .logo-blend {
+  mix-blend-mode: multiply;
+  filter: contrast(1.2) brightness(0.9);
 }
 
 /* Card animations */
@@ -129,6 +183,128 @@ body {
 
 .team-avatar {
   transition: all 0.3s ease;
+}
+
+/* Logo blending styles */
+.logo-wrapper {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bs-primary);
+}
+
+.logo-blend {
+  mix-blend-mode: screen;
+  filter: contrast(1) brightness(1.2);
+  transition: all 0.3s ease;
+}
+
+.logo-blend:hover {
+  filter: contrast(1.1) brightness(1.3);
+}
+
+/* Custom Hamburger Menu */
+.custom-toggler {
+  border: none !important;
+  padding: 0 !important;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 1046;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.toggler-icon {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggler-icon::before,
+.toggler-icon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggler-icon::before {
+  top: -8px;
+}
+
+.toggler-icon::after {
+  bottom: -8px;
+}
+
+.custom-toggler.is-active .toggler-icon {
+  background-color: transparent;
+}
+
+.custom-toggler.is-active .toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.custom-toggler.is-active .toggler-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* Mobile Menu Slider */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--bs-primary);
+    padding: 4rem 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1045;
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+  }
+
+  .navbar-nav {
+    height: 100%;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 1rem 0 !important;
+    color: white !important;
+  }
+
+  .nav-link:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1044;
+}
+
+.menu-overlay.show {
+  display: block;
 }
 
 @media (max-width: 768px) {
